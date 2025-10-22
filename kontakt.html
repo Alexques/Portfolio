@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CS/Stylesheet.css">
+    <script src="JS/script.js"></script>
+    <link rel="shortcut icon" href="AVOICON (1).ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kontakt</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <script>
+    function captchaVerified(token) {
+        // Here, 'token' is the reCAPTCHA response token
+        // You might want to send this token to your server for server-side verification
+        // before fully revealing the content for enhanced security.
+
+        document.getElementById('protected-content').style.display = 'block'; // Or 'flex', 'grid', etc., depending on your layout
+    }
+    </script>
+</head>
+<body>
+
+    <form action="?" method="POST">
+      <div class="g-recaptcha" data-sitekey="6Lcf7_IrAAAAAFoR66cDsGlWnb_h-BHV2wJLL9S5" data-callback="captchaVerified"></div>
+      <br/>
+      <input type="submit" value="Submit">
+    </form>
+    <div id="grad">
+   
+        <button onclick="myFunction()" class="dropbtn">Sider</button>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="index.html">Hjem</a>
+            <a href="minArbeid.html">min Arbeid</a>
+            <a href="ommeg.html">Om meg</a>
+        </div>      
+    
+    <h1>kontakt</h1>
+    <div id="protected-content" >
+    <p>tlf 97584600</p>
+    <p>Epost Alexandervestveitolsen@gmail.com</p>    
+    </div>
+    </body>
+    </div>
+</html>
